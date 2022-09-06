@@ -1,0 +1,87 @@
+<!Doctype html>
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <title>FACTURE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>   
+<body>
+<form action="insert.php" method="POST">
+
+    <fieldset>
+    <legend>FACTURE</legend>
+            <table>
+                <tr>
+                    <td><label>Id: </label></td>
+                    <td><input type="text" name="id" ></td>
+                </tr>
+                <tr>
+                    <td><label >Vendeur:</label></td>
+                    <td><input type="text" placeholder="who is this invoice from?" name="vendeur"></td>
+                </tr>
+                <tr>
+                    <td><label >Client:</label></td>
+                    <td><input type="text" placeholder="who is this invoice to?" name="client"></td>
+                </tr>
+                <tr>
+                    <td><label>Adresse du client:</label></td>
+                    <td><input type="text" name="ad_client"></td>
+                </tr><br>
+                <tr>
+                    <td><label>Date de facturation:</label></td>
+                    <td><input type="date" name="date_fac"></td>
+                </tr>
+                <tr>
+                    <td><label>Numéro de facture:</label></td>
+                    <td><input type="text" name="num_fac" ></td>
+                </tr>
+                <tr>
+                    <td><label>Date d'échéance:</label></td>
+                    <td><input type="date" name="date_echeance" ></td>
+                </tr>
+                <tr>
+                    <td><label>Réference:</label></td>
+                    <td><input type="text" name="ref"></td>
+                </tr>
+    
+            </table>
+            <p>
+                <label>Information additionnelles:</label><br><br>
+                <textarea placeholder="Notes-any relevant information not already covered" name="info_add"></textarea> <br>
+            </p>
+            <table>
+
+                <tr>
+                    <td>Description :</td> 
+                    <td><input type="text" name="description"> </td>
+                </tr>
+                <tr>
+                    <td>Quantité :</td> 
+                    <td><input type="text" name="qte"></td>
+                </tr>
+                <tr>
+                    <td>Prix Unitaire HT :</td>
+                    <td><input type="text" name="prix_un_HT"></td>
+                </tr>
+                <tr>
+                    <td>% TVA :</td>
+                    <td><input type="text" name="%TVA"></td>
+                </tr>
+                <tr>
+                    <td>Total TVA :</td>
+                    <td><input type="text" name="total_TVA"></td>
+                </tr>
+                <tr>
+                    <td>Total TTC :</td>
+                    <td><input type="text" name="total_TTC"></td>
+                </tr>
+                
+            </table><br><br>
+           
+            <button type="submit" name="Envoyer">Enregistrer</button>
+    </fieldset>
+</form>
+        
+</body>
+
+</html>
